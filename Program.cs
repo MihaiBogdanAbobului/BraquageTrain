@@ -23,7 +23,8 @@ class Program
             BONUS 1 : permettre à l'utilisateur de choisir le nombre de wagons
             BONUS 2 : enregistrer l'ensemble du butin trouvé et l'afficher à la fin
          */
-        int total = 0;
+       
+        int totalEx1 = 0;
         Console.WriteLine("Inspection des 4 wagons du train");
 
         for (int i = 1; i < 5; i++)
@@ -31,9 +32,26 @@ class Program
             for (int j = 1; j < 4; j++)
             {
                 Console.WriteLine("Wagon" + i + " - Coffre " + j + " inspecté");
-                total++;
+                totalEx1++;
             }
-            Console.WriteLine("TOTAL : " + total + " coffres inspectés");
+            
+        }Console.WriteLine("TOTAL : " + totalEx1 + " coffres inspectés");
+        
+        
+        int totalEx2 = 0;
+        Console.WriteLine("Entrez le nombre de wagons");
+        int number = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Inspection des " + number + " wagons du train");
+
+        for (int i = 1; i < (number + 1); i++)
+        {
+            for (int j = 1; j < 4; j++)
+            {
+                Console.WriteLine("Wagon" + i + " - Coffre " + j + " inspecté");
+                totalEx2++;
+            }
         }
+        Console.WriteLine("TOTAL : " + totalEx2 + " coffres inspectés");
+        
     }
     } 
