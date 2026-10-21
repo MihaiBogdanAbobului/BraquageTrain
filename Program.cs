@@ -44,7 +44,7 @@ class Program
         
         Console.WriteLine("Inspection des " + number + " wagons du train");
 
-        for (int i = 1; i < (number + 1); i++)
+        for (int i = 1; i <= number; i++)
         {
             for (int j = 1; j < 4; j++)
             {
