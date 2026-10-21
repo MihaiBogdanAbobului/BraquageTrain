@@ -41,6 +41,7 @@ class Program
         int totalEx2 = 0;
         Console.WriteLine("Entrez le nombre de wagons");
         int number = Convert.ToInt32(Console.ReadLine());
+        
         Console.WriteLine("Inspection des " + number + " wagons du train");
 
         for (int i = 1; i < (number + 1); i++)
